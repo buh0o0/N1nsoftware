@@ -1,5 +1,4 @@
-import math
-from math import degrees
+
 #voy hacer una funcion de una receta
 
 #def preparar(Nombre,pasos):
@@ -51,7 +50,32 @@ print(f"el primer dato es de tipo {type(a)}")
 
 
 ##Funciones de modulos
-        #ejemplo 1
-print(math.sqrt(25)) # Usa la función sqrt del módulo math
-        #ejemplo 2
-print(degrees(1.57)) # Usa la función degrees directamente
+##ejemplo 1
+import datetime
+import calendar
+
+def info_tiempo():
+    ahora = datetime.datetime.now()
+    fin_de_anio = datetime.datetime(ahora.year, 12, 31)
+    dias_restantes = (fin_de_anio - ahora).days
+    dia_semana = calendar.day_name[ahora.weekday()]
+    
+    return f"Hoy es {dia_semana}, {ahora.strftime('%d/%m/%Y %H:%M:%S')}. Faltan {dias_restantes} días para fin de año."
+
+
+print(info_tiempo())
+
+## ejemplo 2
+
+import random
+import math
+
+def numero_magico():
+    numero = random.randint(1, 100)
+    raiz = math.sqrt(numero)
+    
+    return f"El número aleatorio es {numero} y su raíz cuadrada es {raiz:.2f}"
+
+# Ejemplo de uso
+print(numero_magico())
+
