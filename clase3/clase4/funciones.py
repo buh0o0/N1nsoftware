@@ -25,7 +25,7 @@ if edad2 <= 18:
 else:
     print("puedes tomar alcohol")
 
-#############  EJERCICIOS 
+#############  EJERCICIOS ################
 
 ##PEDIR AL ESTUDIANTE UNA NOTA ENTRE 0 Y 100 EN UN INPUT
 nota=int(input("elija un numero entre 0 y 100"))
