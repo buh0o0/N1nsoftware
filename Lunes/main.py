@@ -1,5 +1,6 @@
 ##Estructura repetitiva ######15/09/2025##
-'''
+
+### FOR ###
 nombres =["ana","camilo","juan","daniel"]
 #Ejercicio1
 for nombre in nombres:
@@ -14,7 +15,7 @@ for animal in animales:
 #Ejercicio 4
 for animal in animales:
     print("$".join(animal)) ## agrego el texto que quiera entre cada caracter o cadena de texto
-'''
+
 ## WHILE ##
 contrasena="f"
 conteo= 0
